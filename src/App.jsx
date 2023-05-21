@@ -102,7 +102,7 @@ function App() {
 
   return (
     <div
-      className="relative h-screen w-screen overflow-hidden"
+      className="relative h-screen w-screen select-none overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       <motion.img
@@ -185,7 +185,7 @@ function App() {
         }}
       />
 
-      <div className="text-container absolute left-0 top-0 flex h-screen w-screen flex-col items-center justify-center pb-[3rem] text-white">
+      <div className="text-container absolute left-0 top-0 flex h-screen w-screen select-all flex-col items-center justify-center pb-[3rem] text-white">
         <h2 className="text-8xl font-[100] uppercase">China</h2>
         <h1 className="-mt-[2rem] text-[8.5rem] font-[700] uppercase tracking-wide">
           Zhangjiajie
@@ -284,7 +284,7 @@ function App() {
 
       <img
         src={sunRays}
-        className="absolute top-0 h-screen w-screen transform-gpu object-cover"
+        className="absolute top-0 h-screen w-screen transform-gpu object-cover opacity-70"
       />
 
       <img
