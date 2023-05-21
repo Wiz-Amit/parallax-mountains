@@ -85,12 +85,6 @@ function App() {
   const translateX18 = useTransform(springX, [0, w], [s(-1.5), s(1.5)]);
   const translateY18 = useTransform(springY, [0, h], [s(-1.5), s(1.5)]);
 
-  const translateX19 = useTransform(springX, [0, w], [s(-1), s(1)]);
-  const translateY19 = useTransform(springY, [0, h], [s(-1), s(1)]);
-
-  const translateX20 = useTransform(springX, [0, w], [s(-0.5), s(0.5)]);
-  const translateY20 = useTransform(springY, [0, h], [s(-0.5), s(0.5)]);
-
   const handleMouseMove = (event) => {
     const { pageX, pageY } = event;
 
@@ -106,6 +100,9 @@ function App() {
       onMouseMove={handleMouseMove}
     >
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={background}
         className="absolute left-[60%] top-1/4 h-screen w-screen transform-gpu object-cover"
         style={{
@@ -116,6 +113,8 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={fog7}
         className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover"
         style={{
@@ -126,6 +125,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain10}
         className="absolute -bottom-[25%] left-[56%] h-1/2 transform-gpu"
         style={{
@@ -136,6 +138,8 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={fog6}
         className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
         style={{
@@ -146,6 +150,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain9}
         className="absolute -bottom-[25%] left-[15%] h-1/2 transform-gpu"
         style={{
@@ -156,6 +163,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain8}
         className="absolute -bottom-[15%] left-[28%] h-1/2 transform-gpu"
         style={{
@@ -166,6 +176,8 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={fog5}
         className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-10"
         style={{
@@ -176,6 +188,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain7}
         className="absolute -bottom-[30%] left-[65%] h-1/2 transform-gpu"
         style={{
@@ -186,13 +201,28 @@ function App() {
       />
 
       <div className="text-container absolute left-0 top-0 flex h-screen w-screen select-all flex-col items-center justify-center pb-[3rem] text-white">
-        <h2 className="text-8xl font-[100] uppercase">China</h2>
-        <h1 className="-mt-[2rem] text-[8.5rem] font-[700] uppercase tracking-wide">
+        <motion.h2
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2, delay: 1 }}
+          className="text-8xl font-[100] uppercase"
+        >
+          China
+        </motion.h2>
+        <motion.h1
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2, delay: 1 }}
+          className="-mt-[2rem] text-[8.5rem] font-[700] uppercase tracking-wide"
+        >
           Zhangjiajie
-        </h1>
+        </motion.h1>
       </div>
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain6}
         className="absolute -bottom-[25%] right-[0%] h-[60%] scale-150 transform-gpu"
         style={{
@@ -203,6 +233,8 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={fog4}
         className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
         style={{
@@ -213,6 +245,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain5}
         className="absolute -bottom-[40%] left-[50%] h-[46%] scale-150 transform-gpu"
         style={{
@@ -223,6 +258,8 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={fog3}
         className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
         style={{
@@ -233,6 +270,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain4}
         className="absolute -bottom-[35%] left-[20%] h-[46%] scale-150 transform-gpu"
         style={{
@@ -243,6 +283,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain3}
         className="absolute -bottom-[15%] right-[-12%] h-[46%] scale-150 transform-gpu"
         style={{
@@ -253,8 +296,10 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={fog2}
-        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
+        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-10"
         style={{
           translateX: translateX15,
           translateY: translateY15,
@@ -263,6 +308,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain2}
         className="absolute -bottom-[20%] right-[-5%] h-[46%] scale-150 transform-gpu"
         style={{
@@ -273,6 +321,9 @@ function App() {
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={mountain1}
         className="absolute -bottom-[20%] left-[5%] h-[60%] scale-150 transform-gpu"
         style={{
@@ -282,17 +333,25 @@ function App() {
         }}
       />
 
-      <img
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={sunRays}
         className="absolute top-0 h-screen w-screen transform-gpu object-cover opacity-70"
       />
 
-      <img
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={blackShadow}
         className="absolute top-0 h-screen w-screen transform-gpu object-cover"
       />
 
       <motion.img
+        initial={{ y: 150, opacity: 0 }}
+        transition={{ ease: "easeOut", duration: 2 }}
         src={fog1}
         className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
         style={{
