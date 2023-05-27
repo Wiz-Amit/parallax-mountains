@@ -116,7 +116,7 @@ function App() {
         />
 
         <motion.img
-          initial={{ y: 150, opacity: 0 }}
+          initial={{ y: 150 }}
           transition={{ ease: "easeOut", duration: 2 }}
           src={fog7}
           className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover"
@@ -141,10 +141,10 @@ function App() {
         />
 
         <motion.img
-          initial={{ y: 150, opacity: 0 }}
+          initial={{ y: 150 }}
           transition={{ ease: "easeOut", duration: 2 }}
           src={fog6}
-          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-30"
           style={{
             translateX: translateX4,
             translateY: translateY4,
@@ -179,7 +179,7 @@ function App() {
         />
 
         <motion.img
-          initial={{ y: 150, opacity: 0 }}
+          initial={{ y: 150 }}
           transition={{ ease: "easeOut", duration: 2 }}
           src={fog5}
           className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-10"
@@ -236,10 +236,10 @@ function App() {
         />
 
         <motion.img
-          initial={{ y: 150, opacity: 0 }}
+          initial={{ y: 150 }}
           transition={{ ease: "easeOut", duration: 2, delay: 0 }}
           src={fog4}
-          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-30"
           style={{
             translateX: translateX10,
             translateY: translateY10,
@@ -261,10 +261,10 @@ function App() {
         />
 
         <motion.img
-          initial={{ y: 150, opacity: 0 }}
+          initial={{ y: 150 }}
           transition={{ ease: "easeOut", duration: 2, delay: 0 }}
           src={fog3}
-          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-30"
           style={{
             translateX: translateX12,
             translateY: translateY12,
@@ -299,7 +299,7 @@ function App() {
         />
 
         <motion.img
-          initial={{ y: 150, opacity: 0 }}
+          initial={{ y: 150 }}
           transition={{ ease: "easeOut", duration: 2, delay: 0 }}
           src={fog2}
           className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-10"
@@ -353,10 +353,10 @@ function App() {
         />
 
         <motion.img
-          initial={{ y: 150, opacity: 0 }}
+          initial={{ y: 150 }}
           transition={{ ease: "easeOut", duration: 2, delay: 0 }}
           src={fog1}
-          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-30"
           style={{
             translateX: translateX18,
             translateY: translateY18,
