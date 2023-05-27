@@ -96,7 +96,7 @@ function App() {
 
   return (
     <div
-      className="relative h-screen w-screen select-none overflow-hidden"
+      className="relative h-[60vh] md:h-screen w-screen select-none overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       <motion.img
@@ -104,7 +104,7 @@ function App() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={background}
-        className="absolute left-[60%] top-1/4 h-screen w-screen transform-gpu object-cover"
+        className="absolute left-[60%] top-1/4 h-full w-full transform-gpu object-cover"
         style={{
           translateX: translateX1,
           translateY: translateY1,
@@ -116,7 +116,7 @@ function App() {
         initial={{ y: 150, opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={fog7}
-        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover"
+        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover"
         style={{
           translateX: translateX2,
           translateY: translateY2,
@@ -141,7 +141,7 @@ function App() {
         initial={{ y: 150, opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={fog6}
-        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
+        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
         style={{
           translateX: translateX4,
           translateY: translateY4,
@@ -179,7 +179,7 @@ function App() {
         initial={{ y: 150, opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={fog5}
-        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-10"
+        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-10"
         style={{
           translateX: translateX7,
           translateY: translateY7,
@@ -200,12 +200,12 @@ function App() {
         }}
       />
 
-      <div className="text-container absolute left-0 top-0 flex h-screen w-screen select-all flex-col items-center justify-center pb-[3rem] text-white">
+      <div className="text-container absolute left-0 top-0 flex h-full w-full select-all flex-col items-center justify-center pb-[25vw] md:pb-[8vw] text-white">
         <motion.h2
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 2, delay: 1 }}
-          className="text-8xl font-[100] uppercase"
+          className="text-[10vw] font-[100] uppercase"
         >
           China
         </motion.h2>
@@ -213,7 +213,7 @@ function App() {
           initial={{ y: 150, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 2, delay: 1 }}
-          className="-mt-[2rem] text-[8.5rem] font-[700] uppercase tracking-wide"
+          className="-mt-[5vw] text-[9vw] font-[700] uppercase tracking-wider"
         >
           Zhangjiajie
         </motion.h1>
@@ -236,7 +236,7 @@ function App() {
         initial={{ y: 150, opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={fog4}
-        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
+        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
         style={{
           translateX: translateX10,
           translateY: translateY10,
@@ -261,7 +261,7 @@ function App() {
         initial={{ y: 150, opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={fog3}
-        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
+        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
         style={{
           translateX: translateX12,
           translateY: translateY12,
@@ -299,7 +299,7 @@ function App() {
         initial={{ y: 150, opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={fog2}
-        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-10"
+        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-10"
         style={{
           translateX: translateX15,
           translateY: translateY15,
@@ -338,7 +338,7 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={sunRays}
-        className="absolute top-0 h-screen w-screen transform-gpu object-cover opacity-70"
+        className="absolute top-0 h-full w-full transform-gpu object-cover opacity-70"
       />
 
       <motion.img
@@ -346,14 +346,14 @@ function App() {
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={blackShadow}
-        className="absolute top-0 h-screen w-screen transform-gpu object-cover"
+        className="absolute top-0 h-full w-full transform-gpu object-cover"
       />
 
       <motion.img
         initial={{ y: 150, opacity: 0 }}
         transition={{ ease: "easeOut", duration: 2 }}
         src={fog1}
-        className="absolute left-1/2 top-1/2 h-screen w-screen transform-gpu object-cover opacity-20"
+        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
         style={{
           translateX: translateX18,
           translateY: translateY18,
@@ -362,7 +362,7 @@ function App() {
       />
 
       <div
-        className="absolute left-0 top-0 h-screen w-screen"
+        className="absolute left-0 top-0 h-full w-full"
         style={{
           boxShadow: "inset 0px 0px 85px rgba(0,0,0,0.4)",
         }}
