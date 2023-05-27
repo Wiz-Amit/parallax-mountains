@@ -8,6 +8,7 @@ import fog4 from "./assets/fog_4.png";
 import fog5 from "./assets/fog_5.png";
 import fog6 from "./assets/fog_6.png";
 import fog7 from "./assets/fog_7.png";
+import githubIcon from "./assets/github.svg";
 import mountain1 from "./assets/mountain_1.png";
 import mountain10 from "./assets/mountain_10.png";
 import mountain2 from "./assets/mountain_2.png";
@@ -95,279 +96,310 @@ function App() {
   };
 
   return (
-    <div
-      className="relative h-[60vh] md:h-screen w-screen select-none overflow-hidden"
-      onMouseMove={handleMouseMove}
-    >
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={background}
-        className="absolute left-[60%] top-1/4 h-full w-full transform-gpu object-cover"
-        style={{
-          translateX: translateX1,
-          translateY: translateY1,
-          scale: 1.6,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={fog7}
-        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover"
-        style={{
-          translateX: translateX2,
-          translateY: translateY2,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain10}
-        className="absolute -bottom-[25%] left-[56%] h-1/2 transform-gpu"
-        style={{
-          translateX: translateX3,
-          translateY: translateY3,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={fog6}
-        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
-        style={{
-          translateX: translateX4,
-          translateY: translateY4,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain9}
-        className="absolute -bottom-[25%] left-[15%] h-1/2 transform-gpu"
-        style={{
-          translateX: translateX5,
-          translateY: translateY5,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain8}
-        className="absolute -bottom-[15%] left-[28%] h-1/2 transform-gpu"
-        style={{
-          translateX: translateX6,
-          translateY: translateY6,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={fog5}
-        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-10"
-        style={{
-          translateX: translateX7,
-          translateY: translateY7,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain7}
-        className="absolute -bottom-[30%] left-[65%] h-1/2 transform-gpu"
-        style={{
-          translateX: translateX8,
-          translateY: translateY8,
-          scale: 1.5,
-        }}
-      />
-
-      <div className="text-container absolute left-0 top-0 flex h-full w-full select-all flex-col items-center justify-center pb-[25vw] md:pb-[8vw] text-white">
-        <motion.h2
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 2, delay: 1 }}
-          className="text-[10vw] font-[100] uppercase"
-        >
-          China
-        </motion.h2>
-        <motion.h1
+    <>
+      <div
+        className="relative h-[60vh] w-screen select-none overflow-hidden md:h-screen"
+        onMouseMove={handleMouseMove}
+      >
+        <motion.img
           initial={{ y: 150, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 2, delay: 1 }}
-          className="-mt-[5vw] text-[9vw] font-[700] uppercase tracking-wider"
-        >
-          Zhangjiajie
-        </motion.h1>
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={background}
+          className="absolute left-[60%] top-1/4 h-full w-full transform-gpu object-cover"
+          style={{
+            translateX: translateX1,
+            translateY: translateY1,
+            scale: 1.6,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={fog7}
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover"
+          style={{
+            translateX: translateX2,
+            translateY: translateY2,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain10}
+          className="absolute -bottom-[25%] left-[56%] h-1/2 transform-gpu"
+          style={{
+            translateX: translateX3,
+            translateY: translateY3,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={fog6}
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
+          style={{
+            translateX: translateX4,
+            translateY: translateY4,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain9}
+          className="absolute -bottom-[25%] left-[15%] h-1/2 transform-gpu"
+          style={{
+            translateX: translateX5,
+            translateY: translateY5,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain8}
+          className="absolute -bottom-[15%] left-[28%] h-1/2 transform-gpu"
+          style={{
+            translateX: translateX6,
+            translateY: translateY6,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={fog5}
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-10"
+          style={{
+            translateX: translateX7,
+            translateY: translateY7,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain7}
+          className="absolute -bottom-[30%] left-[65%] h-1/2 transform-gpu"
+          style={{
+            translateX: translateX8,
+            translateY: translateY8,
+            scale: 1.5,
+          }}
+        />
+
+        <div className="text-container absolute left-0 top-0 flex h-full w-full select-all flex-col items-center justify-center pb-[25vw] text-white md:pb-[8vw]">
+          <motion.h2
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2, delay: 1 }}
+            className="text-[10vw] font-[100] uppercase"
+          >
+            China
+          </motion.h2>
+          <motion.h1
+            initial={{ y: 150, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 2, delay: 1 }}
+            className="-mt-[5vw] text-[9vw] font-[700] uppercase tracking-wider"
+          >
+            Zhangjiajie
+          </motion.h1>
+        </div>
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain6}
+          className="absolute -bottom-[25%] right-[0%] h-[60%] scale-150 transform-gpu"
+          style={{
+            translateX: translateX9,
+            translateY: translateY9,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={fog4}
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
+          style={{
+            translateX: translateX10,
+            translateY: translateY10,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain5}
+          className="absolute -bottom-[40%] left-[50%] h-[46%] scale-150 transform-gpu"
+          style={{
+            translateX: translateX11,
+            translateY: translateY11,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={fog3}
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
+          style={{
+            translateX: translateX12,
+            translateY: translateY12,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain4}
+          className="absolute -bottom-[35%] left-[20%] h-[46%] scale-150 transform-gpu"
+          style={{
+            translateX: translateX13,
+            translateY: translateY13,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain3}
+          className="absolute -bottom-[15%] right-[-12%] h-[46%] scale-150 transform-gpu"
+          style={{
+            translateX: translateX14,
+            translateY: translateY14,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={fog2}
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-10"
+          style={{
+            translateX: translateX15,
+            translateY: translateY15,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain2}
+          className="absolute -bottom-[20%] right-[-5%] h-[46%] scale-150 transform-gpu"
+          style={{
+            translateX: translateX16,
+            translateY: translateY16,
+            scale: 1.5,
+          }}
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={mountain1}
+          className="absolute -bottom-[20%] left-[5%] h-[60%] scale-150 transform-gpu"
+          style={{
+            translateX: translateX17,
+            translateY: translateY17,
+            scale: 1.8,
+          }}
+        />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={sunRays}
+          className="absolute top-0 h-full w-full transform-gpu object-cover opacity-70"
+        />
+
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={blackShadow}
+          className="absolute top-0 h-full w-full transform-gpu object-cover"
+        />
+
+        <motion.img
+          initial={{ y: 150, opacity: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          src={fog1}
+          className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
+          style={{
+            translateX: translateX18,
+            translateY: translateY18,
+            scale: 1.5,
+          }}
+        />
+
+        <div
+          className="absolute left-0 top-0 h-full w-full"
+          style={{
+            boxShadow: "inset 0px 0px 85px rgba(0,0,0,0.4)",
+          }}
+        ></div>
       </div>
 
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain6}
-        className="absolute -bottom-[25%] right-[0%] h-[60%] scale-150 transform-gpu"
-        style={{
-          translateX: translateX9,
-          translateY: translateY9,
-          scale: 1.5,
-        }}
-      />
+      <footer className="absolute bottom-0 left-1/2 flex w-full -translate-x-1/2 flex-wrap justify-center gap-3 rounded-lg p-4 md:justify-end">
+        <p className="alert bg-opacity-30 text-center text-sm md:hidden">
+          View on desktop for better experience
+        </p>
 
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={fog4}
-        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
-        style={{
-          translateX: translateX10,
-          translateY: translateY10,
-          scale: 1.5,
-        }}
-      />
+        <a
+          className="btn-ghost btn font-[400] normal-case"
+          href="https://www.wizamit.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Developed by WizAmit
+        </a>
 
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain5}
-        className="absolute -bottom-[40%] left-[50%] h-[46%] scale-150 transform-gpu"
-        style={{
-          translateX: translateX11,
-          translateY: translateY11,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={fog3}
-        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
-        style={{
-          translateX: translateX12,
-          translateY: translateY12,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain4}
-        className="absolute -bottom-[35%] left-[20%] h-[46%] scale-150 transform-gpu"
-        style={{
-          translateX: translateX13,
-          translateY: translateY13,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain3}
-        className="absolute -bottom-[15%] right-[-12%] h-[46%] scale-150 transform-gpu"
-        style={{
-          translateX: translateX14,
-          translateY: translateY14,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={fog2}
-        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-10"
-        style={{
-          translateX: translateX15,
-          translateY: translateY15,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain2}
-        className="absolute -bottom-[20%] right-[-5%] h-[46%] scale-150 transform-gpu"
-        style={{
-          translateX: translateX16,
-          translateY: translateY16,
-          scale: 1.5,
-        }}
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={mountain1}
-        className="absolute -bottom-[20%] left-[5%] h-[60%] scale-150 transform-gpu"
-        style={{
-          translateX: translateX17,
-          translateY: translateY17,
-          scale: 1.8,
-        }}
-      />
-
-      <motion.img
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={sunRays}
-        className="absolute top-0 h-full w-full transform-gpu object-cover opacity-70"
-      />
-
-      <motion.img
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={blackShadow}
-        className="absolute top-0 h-full w-full transform-gpu object-cover"
-      />
-
-      <motion.img
-        initial={{ y: 150, opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-        src={fog1}
-        className="absolute left-1/2 top-1/2 h-full w-full transform-gpu object-cover opacity-20"
-        style={{
-          translateX: translateX18,
-          translateY: translateY18,
-          scale: 1.5,
-        }}
-      />
-
-      <div
-        className="absolute left-0 top-0 h-full w-full"
-        style={{
-          boxShadow: "inset 0px 0px 85px rgba(0,0,0,0.4)",
-        }}
-      ></div>
-    </div>
+        <a
+          className="btn-ghost btn normal-case backdrop-blur"
+          href="https://github.com/Wiz-Amit/parallax-mountains"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={githubIcon}
+            alt="GitHub icon"
+            className="mr-2 h-[1.5rem] opacity-60 invert"
+          />{" "}
+          View Code
+        </a>
+      </footer>
+    </>
   );
 }
 
