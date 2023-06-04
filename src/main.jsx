@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import AnimatedCursor from "react-animated-cursor";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import Progress from "./Components/Progress.jsx";
 import "./index.css";
+
+const App = lazy(() => import("./App.jsx"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -27,6 +29,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         ".link",
       ]}
     />
-    <App />
+    <Suspense fallback={<Progress />}>
+      <App />
+    </Suspense>
   </React.StrictMode>
 );
