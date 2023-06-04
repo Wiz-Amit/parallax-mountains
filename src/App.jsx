@@ -1,4 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useCallback, useEffect } from "react";
 import background from "./assets/background.png";
 import blackShadow from "./assets/black_shadow.png";
 import fog1 from "./assets/fog_1.png";
@@ -86,14 +87,43 @@ function App() {
   const translateX18 = useTransform(springX, [0, w], [s(-1.5), s(1.5)]);
   const translateY18 = useTransform(springY, [0, h], [s(-1.5), s(1.5)]);
 
-  const handleMouseMove = (event) => {
-    const { pageX, pageY } = event;
+  const handleMouseMove = useCallback(() => {
+    (event) => {
+      const { pageX, pageY } = event;
 
-    x.set(pageX);
-    y.set(pageY);
+      x.set(pageX);
+      y.set(pageY);
+    };
+  }, [x, y]);
 
-    console.log(pageX, pageY);
-  };
+  useEffect(() => {
+    const motionEvent = window.addEventListener(
+      "devicemotion",
+      function (event) {
+        const accX = event.accelerationIncludingGravity.x;
+        const accY = event.accelerationIncludingGravity.y * -1;
+        const isLandscape = window.matchMedia(
+          "(orientation: landscape)"
+        ).matches;
+
+        // adjust to replicate mouse movement values
+        let pageX = (accX / 10) * w + w / 2;
+        let pageY = (accY / 10) * h + h / 2;
+
+        if (isLandscape) {
+          // swap values
+          [pageX, pageY] = [pageY, pageX];
+        }
+
+        x.set(pageX);
+        y.set(pageY);
+      }
+    );
+
+    return () => {
+      window.removeEventListener("devicemotion", motionEvent);
+    };
+  }, [h, w, x, y]);
 
   return (
     <>
@@ -212,6 +242,7 @@ function App() {
           >
             China
           </motion.h2>
+
           <motion.h1
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
