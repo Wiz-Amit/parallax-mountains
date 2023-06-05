@@ -87,13 +87,11 @@ function App() {
   const translateX18 = useTransform(springX, [0, w], [s(-1.5), s(1.5)]);
   const translateY18 = useTransform(springY, [0, h], [s(-1.5), s(1.5)]);
 
-  const handleMouseMove = useCallback(() => {
-    (event) => {
-      const { pageX, pageY } = event;
+  const handleMouseMove = useCallback((event) => {
+    const { pageX, pageY } = event;
 
-      x.set(pageX);
-      y.set(pageY);
-    };
+    x.set(pageX);
+    y.set(pageY);
   }, [x, y]);
 
   useEffect(() => {
