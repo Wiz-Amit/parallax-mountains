@@ -2,7 +2,7 @@
 
 Parallax mountains with #reactjs and #framermotion 🏔️
 
-![Preview](https://media.licdn.com/dms/image/D4D22AQF6HHu4QWdU2g/feedshare-shrink_800/0/1707052917190?e=1711584000&v=beta&t=l7r-FNX0L88OoxzWDkuS5aY4FNsEXtw0pQyhQi43Khw)
+![Preview](https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYS3hMFKXTXjzRebjeJwG_IPOb9OCb1suOGYg7ChsIp9Ma4_cYS2sE283h9Szie3wdRLVdROxABOCM4s70L__dL6230aUA=w1227-h912)
 
 [View Live Demo](https://parallax-mountains.vercel.app)
 
